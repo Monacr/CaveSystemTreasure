@@ -1,0 +1,31 @@
+Charlie Francesconi, Jarod Scribner, and Matthew Chung
+CSE 143 D
+What did you learn during this project?
+	During this project we have learned a lot about utilizing the skills we’ve gained throughout the 
+    course in order to develop something from our own inspiration. We’ve also learned a lot about how
+    to work together as a team whereas throughout the course we mainly worked individually. We learned
+    how important communication is in team projects and how important it is to decide on formats for code
+    before starting the coding process. Taking on this project took a lot of skills which we learned
+    throughout the process that even went beyond the skills from the course from working out logistics
+    to utilizing our own creativity for our success. 
+What did you enjoy during this project?
+	We enjoyed the freedom that the project gave us in deciding how and what we wanted to create for our
+    program. Rather than taking on someone else’s inspiration, we came up with our own and in doing
+    so we made something we were truly interested in with a topic that fascinated us. We also enjoyed the
+    journey that took us to the end of the project. Although there were trials and tribulations, the
+    friendships made along the way made it all worth it. 
+What did you find challenging or frustrating during this project?
+	The most challenging aspect of the project was taking everything every group member made and
+    bringing it all together. While every class we made individually may have seemed to work how the
+    group member saw it should have, everyone had slightly different views in the nitty gritty aspects
+    of the code which made putting it all together extremely difficult. An additionally challenging part
+    of the project was deciding what we wanted to do and selecting a topic that was neither too simple 
+    or too complicated which stalled the beginning part of the project as we started and terminated multiple
+    programs halfway into programming them.
+What did you find particularly helpful for your learning during this project?
+	One aspect that was particularly helpful for our learning in this project was coming together and
+    talking about our problems whether it be through chat or discord voice calls. The group aspect of
+    the project enabled us to see how each other approached a problem and gave us new perspectives on
+    a problem that we may not have thought of otherwise. When we realized how to work as a group by 
+    communicating and programming together progress went smoothly.
+

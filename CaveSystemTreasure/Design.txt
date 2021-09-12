@@ -1,0 +1,63 @@
+CaveGameMain.java
+    The CaveGameMain Class generates player for the user to explore the cave with, a random cave
+    for the user to explore, prints the game's instructions, and runs the loop that allows the
+    user to move until they win the game. This class contains the only main method in this program and
+    utilizes a while loop to allow the user to continually input instructions. The user inputs their instructions
+    using a scanner dedicated to this class.
+
+RoomNode.java
+    The RoomNode Class represents a single node within the cave system binary tree. The class
+    holds three different constructers made up of the Room, RoomNode left, RoomNode right, and
+    the RoomNode parent in order to create the different branch and leaf nodes necessary for 
+    a randomly generated binary tree that can have one, two, or zero leaf nodes. The
+    seenByPlayer method is used in order to  determine whether or not the player has
+    accessed a room previously or not with a boolean. The getParent() method is used in order 
+    to return the specific parent node of the current RoomNode by returning the RoomNode. 
+
+Room.java
+    The Room class holds the information needed in each RoomNode. It has a string which decides
+    what type of room it is. A string was used because it makes printing out the room type (e.g.
+    for the map) much easier to do than an int for example. It has methods which set the room type
+    to empty as well as return the current room type. The toString method was changed to print out
+    the entirety of what we want each room type to say when you enter it to make it easier to print
+    this each time.
+
+RandomRoom.java
+    The RandomRoom Class randomly generates a cave system as a binary tree made up of a start room,
+    keys, doors, and a treasure. The generate method is used to randomly generate a cave system
+    binary tree made up of keys, doors, and a start room. Using generate as a recursive method 
+    enables us to create randomly generated nodes with Math.random to determine whethere there
+    should be one or two children. We set a concrete start of a start, red door, and red key
+    in order to ensure a winnable game while also giving the tree satisfactory options for play.
+    We also chose to have finish as a resursive method in order to randomly move down the tree
+    in order to place the treasure. The Cave enum is used to store the collection of 
+    different rooms for the cave system that could be randomly chosen. The Cave enum was inspired
+    from the Language Generator assessment as we saw it as an easily accessable storage that we 
+    could take from when creating rooms. The getStart method was created in order for other 
+    classes to easily access a randomly generated cave system with both a treasure as well 
+    as keys, doors, and a start. 
+
+Player.java
+    The player object represents the character of the user. This Class keeps track of a couple 
+    private variables dedicated to a specific player object. The RoomNode currentPos keeps track of
+    the players position in the map. The boolean array inv keeps track of what keys the player has 
+    encountered in the map. The Player() method in this Class allows the user to create a new player
+    using a given cave. This places the player in the cave at the start room of the given cave. The
+    printKeys() method prints the keys player has encountered by checking which values of inv are true.
+    The win method checks if the player has reached the treausre with a yellow key. If they player has
+    done this the method returns false which will break the while loop in CaveGameMain.java. The gameMove()
+    method is the most important method to the games function. everytime gameMove(String direction) is called
+    the method checks the directions value and updates the node currentPos points to accordingly.
+    There are two getter methods in Player. getPos() returns the RoomNode currentPos points to
+    getCurrentRoom() returns the Room object of the RoomNode currentPos points to. 
+
+MapPrinter.java
+    The MapPrinter class prints out a map of what the player has explored so far. Each RoomNode has
+    a boolean which shows whether or not the player has been in that room or not. MapPrinter recursively
+    goes through every node in the tree, sees whether or not that node has been seen by checking the
+    boolean, then prints it in the predetermined fashion if it has been seen. It has a method which
+    prints out the number of spaces needed for the current line using a class constant which was
+    determined so that no two lines on the map have much overlap. The RoomNode field in the constructor
+    is used so that it has a starting point to use. The Player field is used to check the current position.
+    MapPrinter also contains printRecursiveTest which was a method used to print the whole of the map
+    in order to debug and test the rest of the game.
